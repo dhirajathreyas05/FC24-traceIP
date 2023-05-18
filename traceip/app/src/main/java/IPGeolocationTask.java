@@ -1,3 +1,5 @@
+package com.example.traceip;
+
 import android.os.AsyncTask;
 import android.util.Log;
 import org.json.JSONException;
@@ -10,7 +12,7 @@ import java.net.URL;
 
 public class IPGeolocationTask extends AsyncTask<String, Void, JSONObject> {
 
-    private static final String API_URL = "https://api.ipgeolocation.io/ipgeo?apiKey=YOUR_API_KEY&ip=";
+    private static final String API_URL = "https://api.ipgeolocation.io/ipgeo?apiKey=6f53a2b4ca8f432db5561e3a1063aec3&ip=";
     private static final String TAG = IPGeolocationTask.class.getSimpleName();
 
     private GeolocationListener listener;
@@ -74,3 +76,4 @@ public class IPGeolocationTask extends AsyncTask<String, Void, JSONObject> {
         void onGeolocationFailed();
     }
 }
+
